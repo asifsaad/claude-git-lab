@@ -1,0 +1,17 @@
+[project]
+name = "tipcalc"
+version = "0.1.0"
+description = "Tiny bill-splitting demo for learning Claude Code permissions and GitHub PR protections."
+readme = "README.md"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
